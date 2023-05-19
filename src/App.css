@@ -49,6 +49,7 @@ img {
 .card-container {
   background-color: #203745;
   height: 78vh;
+  width: 100vw;
 }
 
 .score-board {
@@ -78,9 +79,36 @@ img {
   background-color: #101c24;
 }
 
+@media (max-width: 1500px) {
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+  }
+}
+
+@media (min-width: 1501px) {
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+  }
+}
+
+@media (max-width: 1300px) {
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (max-width: 400px) {
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
 .cards-section {
-  display: grid;
-  grid-template-columns: repeat(8, auto);
+  background-color: #203745;
   justify-content: space-around;
   row-gap: 25px;
   padding-top: 50px;
