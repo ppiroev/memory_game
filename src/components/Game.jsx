@@ -29,7 +29,9 @@ export default function Game(){
             SetSelectedCards([...selectedCards, cardName])
             checkScore()
         } else {
-            setHighScore(score)
+            if (highScore < score){
+                setHighScore(score)
+            }
             reset();
         }
     }

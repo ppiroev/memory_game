@@ -20,7 +20,7 @@ export default function CardContainer({score, highScore, handleGame}){
     useEffect(()=>{
         const newCards = shuffleCards(cards);
         setCurrCards(newCards)
-    }), [score, highScore]
+    }, [score, highScore])
 
     return (
         <div className="card-container">
